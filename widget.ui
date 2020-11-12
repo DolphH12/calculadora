@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>185</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>401</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>NUMERO 1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QDoubleSpinBox" name="N1">
+        <property name="minimum">
+         <double>-10000000000000000159028911097599180468360808563945281389781327557747838772170381060813469985856815104.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>999999999999999938258300825281978540327027364472124478294416212538871491824599713636820527503908255301632.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>NUMERO 2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QDoubleSpinBox" name="N2">
+        <property name="minimum">
+         <double>-999999999999999977049513265245336628446842719924150006129995974731993452180789911303261294481511546880.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>10000000000000000373409337471459889719393275754491820381027730410378005080671497101378613371421126415052399029342192009216.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="suma">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="resta">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="multiplicar">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>*</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="dividir">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>/</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>RESULTADO:      </string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="resultado">
+        <property name="text">
+         <string>XXXXXXXXX</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

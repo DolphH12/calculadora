@@ -1,0 +1,37 @@
+#include "widget.h"
+#include "ui_widget.h"
+
+Widget::Widget(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::Widget)
+{
+    ui->setupUi(this);
+    setWindowTitle("Calculadora");
+    ui->resultado->setText("0.0");
+}
+
+Widget::~Widget()
+{
+    delete ui;
+}
+
+
+void Widget::on_suma_clicked()
+{
+    ui->resultado->setText(QString::number(ui->N1->value()+ui->N2->value()));
+}
+
+void Widget::on_resta_clicked()
+{
+    ui->resultado->setText(QString::number(ui->N1->value()-ui->N2->value()));
+}
+
+void Widget::on_multiplicar_clicked()
+{
+    ui->resultado->setText(QString::number(ui->N1->value()*ui->N2->value()));
+}
+
+void Widget::on_dividir_clicked()
+{
+    ui->resultado->setText(QString::number(ui->N1->value()/ui->N2->value()));
+}
